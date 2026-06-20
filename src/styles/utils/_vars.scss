@@ -1,1 +1,28 @@
-$c-gray: #eee;
+// Palette
+$red-500: #eb5757;
+$red-500-30: #eb57574d;
+$teal-500: #0db2b3;
+$teal-100: #cfeff0;
+$teal-50: #eefafa;
+$gray-900: #131313;
+$gray-800: #333;
+$gray-600: #4f4f4f;
+$gray-500: #7c7c7c;
+$gray-300: #bdbdbd;
+$gray-200: #d0d0d0;
+$gray-50: #f7f7f7;
+
+// text
+$primary-text: $gray-500;
+$secondary-text: $gray-800;
+$thirdary-text: $gray-300;
+
+// gray
+$primary-gray-bg: $gray-800;
+$primary-gray-bg-hover: $gray-900;
+$secondary-gray-bg: $gray-800;
+$secondary-gray-bg-hover: $gray-900;
+
+// cyan
+$primary-cyan-bg: $teal-500;
+$secondary-cyan-bg: $teal-500;
