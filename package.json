@@ -55,5 +55,8 @@
       "backstop": false,
       "cypress": true
     }
+  },
+  "dependencies": {
+    "scss-reset": "^1.4.6"
   }
 }

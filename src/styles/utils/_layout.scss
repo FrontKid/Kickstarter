@@ -1,0 +1,15 @@
+@use 'mixins' as *;
+
+.container {
+  padding-inline: 30px;
+
+  @include on-tablet {
+    padding-inline: 34px;
+  }
+
+  @include on-desktop {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-inline: 123px;
+  }
+}

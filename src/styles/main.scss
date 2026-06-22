@@ -1,7 +1,7 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@use 'scss-reset';
 
-body {
-  background: $c-gray;
-}
+@use 'utils/index';
+@use 'fonts' as *;
+@use 'typography' as *;
+
+@use 'components/header/header';
