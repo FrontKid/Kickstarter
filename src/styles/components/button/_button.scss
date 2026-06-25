@@ -1,0 +1,47 @@
+@use '../../utils/vars' as var;
+@use '../../utils/mixins' as mixin;
+
+.button {
+  max-width: 150px;
+  padding-block: 16px;
+
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+
+  background-color: #000;
+
+  @include mixin.on-desktop {
+    font-weight: 800;
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
+}
+
+.button--primary-dark {
+  background-color: var.$primary-button-dark;
+
+  @include mixin.hover(background-color, var.$primary-gray-bg-hover);
+}
+
+.button-primary-cyan {
+  background-color: var.$primary-button-cyan;
+
+  @include mixin.hover(background-color, var.$primary-cyan-bg-hover);
+}
+
+// .button-secondary-outline-dark {
+// }
+
+// .button-secondary-outline-cyan {
+// }
+
+// .button-secondary-text-dark {
+// }
+
+// .button-secondary-text-cyan {
+// }

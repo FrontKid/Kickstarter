@@ -1,3 +1,7 @@
+// font
+$font-main: 'Inter', sans-serif;
+$font-secondary: 1;
+
 // Palette
 $red-500: #eb5757;
 $red-500-30: #eb57574d;
@@ -17,9 +21,14 @@ $primary-text: $gray-500;
 $secondary-text: $gray-800;
 $thirdary-text: $gray-300;
 
+// button
+$primary-button-dark: $gray-800;
+$primary-button-cyan: #39bebf;
+
 // gray
 $primary-gray-bg: $gray-800;
 $primary-gray-bg-hover: $gray-900;
+$primary-cyan-bg-hover: #39bebf;
 $secondary-gray-bg: $gray-800;
 $secondary-gray-bg-hover: $gray-900;
 

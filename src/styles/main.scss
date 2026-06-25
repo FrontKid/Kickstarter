@@ -1,7 +1,23 @@
 @use 'scss-reset';
 
-@use 'utils/index';
-@use 'fonts' as *;
+@use 'utils/vars';
+@use 'utils/layout';
+@use 'fonts';
 @use 'typography' as *;
 
-@use 'components/header/header';
+@use 'components/button';
+@use 'components/header';
+
+html {
+  font-family: vars.$font-main;
+  font-size: 16px;
+}
+
+body {
+  color: vars.$primary-text;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

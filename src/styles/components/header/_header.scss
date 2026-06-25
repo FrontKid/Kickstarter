@@ -1,0 +1,77 @@
+@use '../../utils/mixins' as mixin;
+@use '../../utils/vars' as var;
+
+$controls_gap: 30px;
+
+.header {
+  padding-block: 22px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__actions {
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    @include mixin.on-tablet {
+      gap: $controls_gap;
+    }
+  }
+
+  &__controls {
+    display: none;
+    font-family: HelveticaNeueCyr, sans-serif;
+    font-weight: 100;
+
+    @include mixin.on-tablet {
+      display: flex;
+      gap: $controls_gap;
+      align-items: center;
+    }
+
+    @include mixin.on-min-desktop {
+      font-weight: 400;
+    }
+  }
+  &__link {
+    color: var.$gray-600;
+  }
+
+  &__lang {
+    span {
+      cursor: pointer;
+    }
+
+    span.active {
+      color: var.$secondary-text;
+    }
+  }
+
+  &__button {
+    @include mixin.on-tablet {
+      min-width: 100px;
+    }
+
+    @include mixin.on-min-desktop {
+      margin-left: 17px;
+    }
+  }
+
+  &__burger {
+    @include mixin.on-min-desktop {
+      display: none;
+    }
+  }
+
+  @include mixin.on-tablet {
+    padding-block: 29px;
+  }
+
+  @include mixin.on-min-desktop {
+    padding-block: 30px;
+  }
+}
