@@ -2,6 +2,7 @@
 @use '../../utils/mixins' as mixin;
 
 $vertical-gap: 22px;
+$transition-duration: 0.5s;
 
 .burger-menu {
   position: absolute;
@@ -15,7 +16,9 @@ $vertical-gap: 22px;
   opacity: 0;
   background-color: #fff;
 
-  transition: transform 0.5s;
+  transition:
+    transform $transition-duration,
+    opacity $transition-duration;
 
   &__wrapper {
     position: relative;
