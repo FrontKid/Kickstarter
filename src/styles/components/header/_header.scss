@@ -69,6 +69,7 @@ $controls_gap: 30px;
 
   @include mixin.on-tablet {
     padding-block: 29px;
+    margin-bottom: 101px;
   }
 
   @include mixin.on-min-desktop {

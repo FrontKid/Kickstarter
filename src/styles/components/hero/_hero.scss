@@ -1,0 +1,68 @@
+@use '../../utils/vars' as var;
+@use '../../utils/mixins' as mixin;
+
+.hero {
+  color: var.$secondary-text;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include mixin.on-tablet {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @include mixin.on-tablet {
+      font-size: 48px;
+      margin-bottom: 30px;
+      max-width: 378px;
+    }
+
+    @include mixin.on-min-desktop {
+      font-size: 62px;
+    }
+  }
+
+  &__description {
+    letter-spacing: 1px;
+    line-height: 1.4;
+
+    @include mixin.on-tablet {
+      max-width: 276px;
+    }
+  }
+
+  &__image-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include mixin.on-tablet {
+      max-width: 430px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    max-width: 500px;
+
+    @include mixin.on-tablet {
+      object-position: initial;
+    }
+
+    @include mixin.on-min-desktop {
+      max-width: 700px;
+    }
+
+    @include mixin.on-desktop {
+      max-width: 818px;
+    }
+  }
+}

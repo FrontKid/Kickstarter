@@ -38,5 +38,3 @@ Implement landing page according to [Figma design](<https://www.figma.com/file/U
 14. Copy `DEMO LINK` to the PR description
 
 > To update you PR repeat steps 7-11
-
-ШРИФТИ подключили, проверить хедер на шрифти, доделать хедер

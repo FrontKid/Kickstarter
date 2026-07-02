@@ -9,6 +9,7 @@
 @use 'components/header';
 @use 'components/burger-menu';
 @use 'components/navigation';
+@use 'components/hero';
 
 html {
   font-family: vars.$font-main;
@@ -17,6 +18,8 @@ html {
 
 body {
   color: vars.$primary-text;
+  background-color: vars.$gray-50;
+  line-height: 1.2;
 }
 
 a {
