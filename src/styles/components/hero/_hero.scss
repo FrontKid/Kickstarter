@@ -17,16 +17,14 @@
 
   &__title {
     margin-bottom: 20px;
-
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
 
     @include mixin.on-tablet {
       max-width: 378px;
-
-      font-size: 48px;
       margin-bottom: 30px;
+      font-size: 48px;
     }
 
     @include mixin.on-min-desktop {
