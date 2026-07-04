@@ -10,6 +10,7 @@
 @use 'components/burger-menu';
 @use 'components/navigation';
 @use 'components/hero';
+@use 'components/futuristic-design';
 
 html {
   font-family: vars.$font-main;
@@ -29,4 +30,11 @@ a {
 
 .wrapper {
   position: relative;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+  color: vars.$secondary-text;
 }
