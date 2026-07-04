@@ -18,9 +18,9 @@ html {
 }
 
 body {
+  line-height: 1.2;
   color: vars.$primary-text;
   background-color: vars.$gray-50;
-  line-height: 1.2;
 }
 
 a {
@@ -33,8 +33,8 @@ a {
 }
 
 .title {
-  text-transform: uppercase;
-  font-weight: bold;
   font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: vars.$secondary-text;
 }
