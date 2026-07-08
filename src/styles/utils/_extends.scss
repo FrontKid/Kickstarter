@@ -1,7 +1,27 @@
 @use './vars' as var;
 @use './mixins' as mixin;
+@use './vars' as vars;
 
 %h1 {
   font-family: Roboto, sans-serif;
   font-weight: 400;
+}
+
+%title {
+  font-size: 30px;
+  font-weight: bold;
+  color: vars.$secondary-text;
+  text-transform: uppercase;
+}
+
+%section-gap {
+  margin-bottom: 110px;
+
+  @include mixin.on-tablet {
+    margin-bottom: 140px;
+  }
+
+  @include mixin.on-min-desktop {
+    margin-bottom: 170px;
+  }
 }

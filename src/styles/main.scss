@@ -11,6 +11,7 @@
 @use 'components/navigation';
 @use 'components/hero';
 @use 'components/futuristic-design';
+@use 'components/product-overview';
 
 html {
   font-family: vars.$font-main;
@@ -30,11 +31,5 @@ a {
 
 .wrapper {
   position: relative;
-}
-
-.title {
-  font-size: 22px;
-  font-weight: bold;
-  color: vars.$secondary-text;
-  text-transform: uppercase;
+  overflow: hidden;
 }

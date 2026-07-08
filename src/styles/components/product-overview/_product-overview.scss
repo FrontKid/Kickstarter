@@ -1,0 +1,122 @@
+@use '../../utils/mixins' as mixin;
+@use '../../utils/extends';
+
+.product-overview {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 110px;
+
+    @include mixin.on-tablet {
+      row-gap: 140px;
+    }
+
+    @include mixin.on-min-desktop {
+      row-gap: 170px;
+    }
+
+    @include mixin.on-desktop {
+      align-items: normal;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    @include mixin.on-tablet {
+      flex-direction: row;
+      column-gap: 20px;
+      align-items: flex-start;
+
+      &:nth-child(odd) {
+        margin-right: 34px;
+      }
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        margin-left: 34px;
+      }
+    }
+
+    @include mixin.on-min-desktop {
+      column-gap: 34px;
+
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+
+      &:nth-child(even) {
+        margin-left: 0;
+      }
+    }
+
+    @include mixin.on-desktop {
+      justify-content: space-between;
+    }
+  }
+
+  &__image-wrapper {
+    margin-bottom: 20px;
+
+    @include mixin.on-tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+
+    @include mixin.on-tablet {
+      min-height: 415px;
+    }
+  }
+
+  &__title-mob,
+  &__title-tablet {
+    margin-bottom: 30px;
+  }
+
+  &__title-mob {
+    @extend %title;
+
+    @include mixin.on-tablet {
+      display: none;
+    }
+  }
+
+  &__info {
+    @include mixin.on-tablet {
+      max-width: 340px;
+    }
+
+    @include mixin.on-desktop {
+      max-width: 582px;
+    }
+  }
+
+  &__title-tablet {
+    @extend %title;
+
+    display: none;
+
+    @include mixin.on-tablet {
+      display: block;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  @extend %section-gap;
+
+  @include mixin.on-tablet {
+    padding-inline: 0;
+  }
+
+  @include mixin.on-desktop {
+    padding-inline: 123px;
+  }
+}

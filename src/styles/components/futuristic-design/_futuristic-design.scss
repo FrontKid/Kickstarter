@@ -1,8 +1,7 @@
 @use '../../utils/mixins' as mixin;
+@use '../../utils/extends' as *;
 
 .futuristic-design {
-  margin-bottom: 110px;
-
   &__menu-nav {
     display: none;
 
@@ -45,7 +44,10 @@
   }
 
   &__title {
+    @extend %title;
+
     margin-bottom: 20px;
+    font-size: 22px;
     text-align: center;
 
     @include mixin.on-min-desktop {
@@ -65,4 +67,6 @@
   &__image {
     object-position: 15px;
   }
+
+  @extend %section-gap;
 }

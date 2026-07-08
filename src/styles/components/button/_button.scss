@@ -43,5 +43,31 @@
 // .button-secondary-text-dark {
 // }
 
-// .button-secondary-text-cyan {
-// }
+.button--secondary-text-cyan {
+  padding-block: 6px;
+  font-weight: 500;
+  color: var.$secondary-cyan-bg;
+
+  background-color: transparent;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 33.3%;
+    height: 1px;
+
+    background-color: var.$secondary-cyan-bg;
+
+    transition: width 0.3s;
+  }
+
+  @media (hover: hover) {
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

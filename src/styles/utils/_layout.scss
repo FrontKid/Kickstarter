@@ -1,13 +1,13 @@
-@use 'mixins' as *;
+@use 'mixins' as mixin;
 
 .container {
   padding-inline: 30px;
 
-  @include on-tablet {
+  @include mixin.on-tablet {
     padding-inline: 34px;
   }
 
-  @include on-desktop {
+  @include mixin.on-desktop {
     max-width: 1440px;
     margin: 0 auto;
     padding-inline: 123px;

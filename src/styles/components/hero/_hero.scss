@@ -1,8 +1,10 @@
 @use '../../utils/vars' as var;
 @use '../../utils/mixins' as mixin;
+@use '../../utils/extends' as extends;
 
 .hero {
-  margin-bottom: 110px;
+  @extend %section-gap;
+
   color: var.$secondary-text;
 
   &__wrapper {
