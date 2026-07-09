@@ -12,6 +12,7 @@
 @use 'components/hero';
 @use 'components/futuristic-design';
 @use 'components/product-overview';
+@use 'components/review';
 
 html {
   font-family: vars.$font-main;
